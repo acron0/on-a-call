@@ -2,7 +2,7 @@
     "name": "On A Call!",
     "manifest_version": 2,
     "version": "1.0",
-    "description": "Hits an IFTTT webhook when you're in a video call. Supports appear.in and Google Hangouts",
+    "description": "Hits a webhook when you're in a video call (and then off a video call). Supports appear.in and Google Hangouts",
     "browser_action": {
         "default_icon": "icon.png",
         "default_title": "On A Call!",
