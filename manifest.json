@@ -1,0 +1,26 @@
+{
+    "name": "On A Call!",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Hits an IFTTT webhook when you're in a video call. Supports appear.in and Google Hangouts",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "On A Call!",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://appear.in/*",
+                "https://hangouts.google.com/*"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "storage"
+    ]
+}
